@@ -1,24 +1,14 @@
-<div class="container__big-card">
+<div class="container flex flex-col hover:cursor-pointer hover:bg-gray-300 transition-all">
+  <img
+    src="{{ photoCover }}"
+    alt=""
+    height="200px"
+    srcset=""
+  >
 
-  <div class="big-card__photo">
-    <img
-      src="{{ photoCover }}"
-      alt=""
-      height="200px"
-      srcset=""
-    >
-  </div>
+  <a class="text-4xl font-bold pt-4" [routerLink]="['content', Id]">{{ cardTitle }}</a>
 
-  <div class="big-card__title">
-    <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
-  </div>
-
-  <div class="big-card__description">
-    <p>
-      <a [routerLink]="['content', Id]">
-          {{ cardDescription }}
-      </a>
-    </p>
-  </div>
-
+  <a class="py-2"  [routerLink]="['content', Id]">
+      {{ cardDescription }}
+  </a>
 </div>

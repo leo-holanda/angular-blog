@@ -1,15 +1,12 @@
-<div class="flex gap-6">
-  <div class="w-52">
+<div class="grid grid-cols-2 hover:cursor-pointer hover:bg-gray-300 transition-all" [routerLink]="['content', Id]">
+  <div class="mr-4">
     <img
       src="{{ photoCover }}"
       alt="Photo cover for blog post"
     >
   </div>
 
-  <div class="flex justify-center items-center">
-    <h1><a [routerLink]="['content', Id]" >{{ cardTitle }}</a></h1>
+  <div class="flex justify-start items-center">
+    <p class="text-xl lg:text-base">{{ cardTitle }}</p>
   </div>
 </div>
-
-
-
