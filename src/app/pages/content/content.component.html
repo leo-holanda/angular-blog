@@ -1,14 +1,14 @@
-<div class="container__content">
-  <div class="content__cover">
-    <img src="{{ photoCover }}" alt="" srcset="">
+<div class="container__content w-100 h-100 mt-4 flex flex-col items-center">
+  <div class="w-1/2 h-1/2">
+    <img class="border-4 border-gray-100 rounded" src="{{ photoCover }}" alt="" srcset="">
   </div>
   <div class="content__title">
     <h1>{{ contentTitle }}</h1>
     <hr />
   </div>
-  <div class="content__description">
+  <div class="mt-4">
     <a [routerLink]="['']"> << VOLTAR </a>
-    <p>
+    <p class="mt-5 text-neutral-400">
       {{ contentDescription }}
     </p>
   </div>
